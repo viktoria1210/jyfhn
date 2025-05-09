@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Fantasy World</title>
+<link rel="stylesheet" href="style1.css"/>
+
+</head>
+    <body>
+      <audio id="magic-audio" loop>
+        <source src="Музика із фільму Гаррі Поттер _ Soundtrack from Harry Potter - Andriana Behai Music.mp3" type="audio/mpeg">
+    </audio>
+    
+</audio>
+    <header>
+    <h1>Fantasy World</h1>
+    </header>
+    <main>
+    <p class="div"> Готові поринути у світ магії?</p>
+    <p class="div2"> Якщо так тоді натискай!</p>
+      <button class="custom-btn btn-6"><span> <a href="index2.html" >  Поринаємо у магію   </a></span></button>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("magic-audio");
+        
+            function startAudio() {
+                audio.play().catch(function(e) {
+                    console.log("Автовідтворення заборонене, потрібно натиснути ще раз.");
+                });
+                document.removeEventListener("click", startAudio);
+            }
+        
+            document.addEventListener("click", startAudio);
+        });
+        </script>
+    </body>
+
+</html>

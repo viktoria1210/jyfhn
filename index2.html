@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Fantasy World</title>
+  <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+    <audio id="magic-audio" loop>
+        <source src="Музика із фільму Гаррі Поттер _ Soundtrack from Harry Potter - Andriana Behai Music.mp3" type="audio/mpeg">
+    </audio>
+  <h1>Світ Fantasy</h1>
+  <p>
+    Ласкаво просимо до загадкового світу, сповненого магії, чарівних істот та стародавніх легенд.
+    Тут кожна стежка веде до пригод, кожен ліс ховає таємниці, а кожен герой шукає свою долю.
+  </p>
+ <main>
+  <div class="block">
+    <h2>Ельфи</h2>
+    <img src="https://discover.in.ua/uploads/illustrations/%D0%95%D0%BB%D1%8C%D1%84%D0%B8.jpg" class="img">
+    <p>
+      Ельфи — це вічноживі створіння з глибоким зв’язком до природи. Вони живуть у густих лісах,
+      співають пісні зорям і володіють цілющою магією. Їхні стріли завжди влучають у ціль.
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Дракони</h2>
+    <img src="https://www.rodyna.in.ua/wp-content/uploads/2017/01/%D0%97-%D0%B2%D0%B5%D1%81%D0%B5%D0%BB%D0%BA%D0%BE%D1%8E_6_1.jpg" alt="Дракон" class="img">
+    <p>
+      Дракони — наймогутніші істоти Fantasy світу. Вони охороняють скарби, літають високо над хмарами
+      та володіють диханням, яке може розтопити гори. Деякі з них мудрі, інші — жорстокі.
+    </p>
+  </div>
+ <button class="custom-btn btn-12"><span> <a href="index3.html">  Натискай!</a></span><span>Істоти з Казкового Світу</span></button>
+ </main>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("magic-audio");
+    
+        function startAudio() {
+            audio.play().catch(function(e) {
+                console.log("Автовідтворення заборонене, потрібно натиснути ще раз.");
+            });
+            document.removeEventListener("click", startAudio);
+        }
+    
+        document.addEventListener("click", startAudio);
+    });
+    </script>
+</body>
+</html>

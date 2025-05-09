@@ -1,0 +1,47 @@
+<html>
+    <head>
+  <title>Істоти з Казкового Світу</title>
+  <link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+    <audio id="magic-audio" loop>
+        <source src="Музика із фільму Гаррі Поттер _ Soundtrack from Harry Potter - Andriana Behai Music.mp3" type="audio/mpeg">
+    </audio>
+  <h1>Магічні Істоти з Казкового Світу</h1>
+  <p>Дивовижні істоти, що населяють різноманітні казкові світи, чекають на своїх пригодників. Вони можуть бути як добрими союзниками, так і містичними ворогами.</p>
+<main>
+  <div class="creature">
+    <img src="https://puzzleit.ru/files/puzzles/121/121483/_original.jpg"  class="img-side">
+    <div class="description">
+      <h2>Дракон</h2>
+      <p>Дракон — величезна істота, що вміє керувати вогнем і має могутні крила. Він є як охоронець давніх земель, так і таємничий персонаж в легендах і оповідях.</p>
+    </div>
+  </div>
+
+  <div class="creature">
+    <img src="https://st.depositphotos.com/1210943/2010/i/450/depositphotos_20100661-stock-photo-in-the-fairy-forest.jpg" class="img-side">
+    <div class="description">
+      <h2>Фея</h2>
+      <p>Фея — чарівна істота, здатна створювати магічні закляття. Вона допомагає тим, хто шукає допомогу у складних ситуаціях, але може бути і підступною.</p>
+    </div>
+  </div>
+
+  <a href="index2.html" class="button">  Назад до Світу Fantasy</a>
+  <a href="index4.html" class="button">Відвідай Ґедзьо Парк</a>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("magic-audio");
+    
+        function startAudio() {
+            audio.play().catch(function(e) {
+                console.log("Автовідтворення заборонене, потрібно натиснути ще раз.");
+            });
+            document.removeEventListener("click", startAudio);
+        }
+    
+        document.addEventListener("click", startAudio);
+    });
+    </script>
+</body>
+</html>

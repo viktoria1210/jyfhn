@@ -1,0 +1,74 @@
+body {
+    background-color: #003300;
+    color: #e0ffe0;
+    font-family: 'Georgia', serif;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  h1::before {
+    content: "🌿 ";
+    position: absolute;
+    left: -30px;
+  }
+  
+  h1::after {
+    content: " 🌿";
+    position: absolute;
+    right: -30px;
+  }
+  
+  .creature {
+    display: flex;
+    background-color: #004d00;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .img-side {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  h2 {
+    margin: 0;
+    color: #ffff99;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color:#006600;
+    color: white;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 40px auto;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+  .button:hover {
+    background-color: #009900;
+  }
+  
+  .button:visited {
+    color: #ccffcc;
+  }
+  
+  .button:focus {
+    outline: 2px solid lime;
+  }
